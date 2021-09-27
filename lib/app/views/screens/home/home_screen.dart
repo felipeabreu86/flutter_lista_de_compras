@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '/app/views/screens/home/components/app_bar.dart';
 import 'package:stacked/stacked.dart';
 import '/app/viewmodels/home_viewmodel.dart';
+import 'components/body.dart';
 import 'components/bottom_navigator.dart';
 import 'components/floating_action_button.dart';
 
@@ -16,22 +17,11 @@ class HomeScreen extends StatelessWidget {
       builder: (context, model, child) => SafeArea(
         child: Scaffold(
           appBar: HomeAppBar(),
-          body: MyScreen(),
-          bottomNavigationBar: BottomNavBar(),
-          floatingActionButton: CustomFloatingActionButton(),
+          body: HomeBody(),
+          bottomNavigationBar: HomeBottomNavigationBar(),
+          floatingActionButton: HomeFloatingActionButton(),
         ),
       ),
     );
-  }
-}
-
-class MyScreen extends ViewModelWidget<HomeViewModel> {
-  const MyScreen({
-    Key? key,
-  }) : super(key: key, reactive: true);
-
-  @override
-  Widget build(BuildContext context, HomeViewModel model) {
-    return model.getScreen();
   }
 }
