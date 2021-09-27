@@ -13,7 +13,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return ViewModelBuilder<HomeViewModel>.nonReactive(
       viewModelBuilder: () => HomeViewModel(),
-      onModelReady: (model) => model.runHomeStartupLogic(),
+      onModelReady: (model) => model.runHomeStartupLogic(context),
       builder: (context, model, child) => SafeArea(
         child: Scaffold(
           appBar: HomeAppBar(),

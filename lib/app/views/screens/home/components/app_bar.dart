@@ -23,11 +23,11 @@ class HomeAppBar extends ViewModelWidget<HomeViewModel>
           children: [
             TextSpan(
               text: "Lista de ",
-              style: TextStyle(color: kPrimaryColor, fontSize: 25),
+              style: TextStyle(color: kPrimaryColor, fontSize: 26),
             ),
             TextSpan(
               text: "Compras",
-              style: TextStyle(color: ksecondaryColor, fontSize: 25),
+              style: TextStyle(color: ksecondaryColor, fontSize: 26),
             )
           ],
         ),
