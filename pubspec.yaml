@@ -46,11 +46,11 @@ dev_dependencies:
 flutter_icons:
   android: true
   ios: true
-  image_path: "assets/images/cart-logo.png"
+  image_path: "assets/images/market-cart-logo.png"
 
 flutter_native_splash:
   color: "#FFC61F"
-  image: assets/images/cart-logo.png
+  image: assets/images/market-cart-logo.png
   android: true
   ios: true
 

@@ -16,20 +16,21 @@ class HomeAppBar extends ViewModelWidget<HomeViewModel>
       elevation: 0,
       title: RichText(
         text: TextSpan(
-            style: Theme.of(context)
-                .textTheme
-                .headline6
-                ?.copyWith(fontWeight: FontWeight.bold),
-            children: [
-              TextSpan(
-                text: "Lista de ",
-                style: TextStyle(color: kPrimaryColor, fontSize: 25),
-              ),
-              TextSpan(
-                text: "Compras",
-                style: TextStyle(color: ksecondaryColor, fontSize: 25),
-              )
-            ]),
+          style: Theme.of(context)
+              .textTheme
+              .headline6
+              ?.copyWith(fontWeight: FontWeight.bold),
+          children: [
+            TextSpan(
+              text: "Lista de ",
+              style: TextStyle(color: kPrimaryColor, fontSize: 25),
+            ),
+            TextSpan(
+              text: "Compras",
+              style: TextStyle(color: ksecondaryColor, fontSize: 25),
+            )
+          ],
+        ),
       ),
     );
   }
