@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:lista_compras/app/viewmodels/lista_compras_viewmodel.dart';
+import '/app/viewmodels/lista_compras_viewmodel.dart';
 import '/shared/config/screen_config.dart';
-import 'package:lista_compras/shared/constants.dart';
+import '/shared/constants.dart';
 import 'package:stacked/stacked.dart';
 
 class ListaComprasScreen extends StatelessWidget {

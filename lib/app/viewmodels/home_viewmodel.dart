@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:lista_compras/app/routes.dart';
-import 'package:lista_compras/shared/config/screen_config.dart';
+import '/app/routes.dart';
+import '/shared/config/screen_config.dart';
 
 class HomeViewModel extends ChangeNotifier {
   bool isListCreated = false;
